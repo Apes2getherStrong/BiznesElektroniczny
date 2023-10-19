@@ -1,7 +1,7 @@
 ### 1. *Zespół zakłada repozytorium kodu (projekt) na GitHub/GitLab
 - a. Wersjonowany jest tylko kod źródłowy, bez cache, uploadów, itd. –
 dopuszczalne jest umieszczenie zdjęć zarejestrowanych produktów
-- b. W ustawieniach projektu zarejestrowano wszystkich członków zespołu;
+- ~~b. W ustawieniach projektu zarejestrowano wszystkich członków zespołu;~~
 - c. Repozytorium zawiera plik .gitignore określający zasoby niepodlegające
 wersjonowaniu;
 - d. Repozytorium zawiera plik README.md z opisem projektu, wykorzystanej
