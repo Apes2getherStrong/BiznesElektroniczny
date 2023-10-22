@@ -45,7 +45,7 @@ class MoonspiderSpider(scrapy.Spider):
 
         if nextPageContainer is not None:
             nextPageUrl = nextPageContainer.css('::attr(href)').get()
-            yield response.follow(nextPageUrl, callback=self.parse_item_page, #response.follow
+            yield response.follow(nextPageUrl, callback=self.parse_item_page,  # response.follow
                                   cb_kwargs={'mainCategoryName': mainCategoryName,
                                              'subCategoryName': subCategoryName})
 
@@ -53,6 +53,7 @@ class MoonspiderSpider(scrapy.Spider):
         moonItem = MoonItem()
 
         moonItem['name'] = response.css('.product__title ::text').get()
+        moonItem['url'] = response.url
         moonItem['mainCategory'] = mainCategoryName
         moonItem['subCategory'] = subCategoryName
         moonItem['price'] = response.xpath(
@@ -60,17 +61,11 @@ class MoonspiderSpider(scrapy.Spider):
             "@data-product-price]/text()").get()
         moonItem['description'] = ' '.join(
             response.xpath("//div[contains(@class, 'tab-content__entry')]/*/text()").getall())
-        #moonItem['rating'] = response.css('.tm-grade-label__text tm-score-platforms ::text').get()
-            #gowno nie dziala
+        moonItem['imagesUrl'] = response.css('div.product__photo ::attr(src)').getall()
+        # moonItem['rating'] = response.css('.tm-grade-label__text tm-score-platforms ::text').get()
+        # gowno nie dziala
         yield moonItem
 
-    # TODO
 
-# parse inputs
-# download images
-# dodatkowe pola (opis, szczegóły i material, jak dbać, cena)
-# moze opiniee w osobnej tablicy
 
-# jak bedzie trzeba to dodatkowi agenci zeby nie bylo html error 430
-# python -m pip freeze > requirements.txt
-# python -m pip install -r requirements.txt
+#

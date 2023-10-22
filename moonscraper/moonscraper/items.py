@@ -8,8 +8,11 @@ import scrapy
 
 class MoonItem(scrapy.Item):
     name = scrapy.Field()
+    url = scrapy.Field()
     mainCategory = scrapy.Field()
     subCategory = scrapy.Field()
     price = scrapy.Field()
     description = scrapy.Field()
-    rating = scrapy.Field()
+    # rating = scrapy.Field()  PROBLEM WITH JAVASCRIPT
+    imagesUrl = scrapy.Field()
+
