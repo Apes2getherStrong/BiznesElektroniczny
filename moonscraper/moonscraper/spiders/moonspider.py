@@ -31,7 +31,7 @@ class MoonspiderSpider(scrapy.Spider):
 
     def parse_item_page(self, response, mainCategoryName, subCategoryName):
         items = response.css(".product-item__image")
-        page = 1
+
         # go through each item on a page (open it up)
         for item in items:
             itemUrl = item.css('a ::attr(href)').get()
@@ -39,13 +39,13 @@ class MoonspiderSpider(scrapy.Spider):
                                   cb_kwargs={'mainCategoryName': mainCategoryName,
                                              'subCategoryName': subCategoryName})
 
-        # go through item pages
+        # go through item page container - if on last page this is None
         nextPageContainer = response.xpath(
             "//span[@class='pagination-custom__page pagination-custom__page--active']/following-sibling::*[1]")
 
         if nextPageContainer is not None:
             nextPageUrl = nextPageContainer.css('::attr(href)').get()
-            yield response.follow(nextPageUrl, callback=self.parse_item_page,
+            yield response.follow(nextPageUrl, callback=self.parse_item_page, #response.follow
                                   cb_kwargs={'mainCategoryName': mainCategoryName,
                                              'subCategoryName': subCategoryName})
 
@@ -56,14 +56,15 @@ class MoonspiderSpider(scrapy.Spider):
         moonItem['mainCategory'] = mainCategoryName
         moonItem['subCategory'] = subCategoryName
         moonItem['price'] = response.xpath(
-            "//div[contains(@class, 'product__price__wrap')]/div[contains(@class, 'product__price')]/span[@data-product-price]/text()").get()
-
-
-
-        #moonItem['description']=
+            "//div[contains(@class, 'product__price__wrap')]/div[contains(@class, 'product__price')]/span["
+            "@data-product-price]/text()").get()
+        moonItem['description'] = ' '.join(
+            response.xpath("//div[contains(@class, 'tab-content__entry')]/*/text()").getall())
+        #moonItem['rating'] = response.css('.tm-grade-label__text tm-score-platforms ::text').get()
+            #gowno nie dziala
         yield moonItem
 
-# TODO
+    # TODO
 
 # parse inputs
 # download images
@@ -71,3 +72,5 @@ class MoonspiderSpider(scrapy.Spider):
 # moze opiniee w osobnej tablicy
 
 # jak bedzie trzeba to dodatkowi agenci zeby nie bylo html error 430
+# python -m pip freeze > requirements.txt
+# python -m pip install -r requirements.txt
