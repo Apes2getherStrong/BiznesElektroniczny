@@ -64,7 +64,7 @@ class MoonspiderSpider(scrapy.Spider):
         yield moonItem
 
 # TODO
-# go through pages - DONE
+
 # parse inputs
 # download images
 # dodatkowe pola (opis, szczegóły i material, jak dbać, cena)
