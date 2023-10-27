@@ -1,0 +1,71 @@
+version: '3'
+
+services:
+  db:
+    container_name: ps-maria
+    image: mariadb
+    volumes:
+      - $PWD/data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_DATABASE: ps
+      MYSQL_USER: ps
+      MYSQL_PASSWORD: ps
+    ports:
+      - "3306"
+    networks:
+      - my_net
+
+  ps:
+    container_name: ps-web
+    volumes:
+      - "$PWD/html:/var/www/html"
+    depends_on:
+      - db
+    image: prestashop/prestashop:1.7.8
+    ports:
+      - "8080:80"
+    environment:
+      DB_SERVER: db
+      DB_USER: ps
+      DB_PASSWD: ps
+      DEV_MODE: 1
+      DB_NAME: ps
+      PS_FOLDER_ADMIN: admin1 # localhost:8080/admin1 tu znajdziemy panel admina
+      PS_FOLDER_INSTALL: install1 # jak wchodzimy instalować, to na localhost:8080/install1
+    networks:
+      - my_net
+
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_ARBITRARY: 1
+    ports:
+      - "8081:80"
+    networks:
+      - my_net
+    depends_on:
+      - db
+
+networks:
+  my_net:
+
+
+# Przy instalacji wpisujcie:
+# Nazwa sklepu Kamieniary
+# Dzialnosc Inne
+# Kraj Polska
+# SSL Nie, oskar mowi ze bedzie trzeba niby to ssl zrobic ale nw wtedy cos sie jebie
+# Imie: Gogacz
+# Nazwisko: Gogaczow
+# adres email: xyz@w.pl - sie kurwa jebnalem
+# Haslo: KochamPreste123!
+
+# Przy bazce:
+# u gory db, na reszcie ps
+
+# jesli w wyszukiwarce znajdziecie kamien mocy to jest super dziala
+
+# odpalacie za pomoca docker-compose up -d
+# zamykacie za pomoca docker-compose down

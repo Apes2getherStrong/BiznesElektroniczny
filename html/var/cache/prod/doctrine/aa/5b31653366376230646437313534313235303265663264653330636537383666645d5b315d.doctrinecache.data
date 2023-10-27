@@ -1,0 +1,26 @@
+1698418438
+s:1386:"HTTP/1.1 200 OK
+Date: Fri, 27 Oct 2023 12:53:58 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Permissions-Policy: fullscreen=(*)
+X-XSS-Protection: 1; mode=block;
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Feature-Policy: accelerometer 'self'; ambient-light-sensor 'self'; autoplay 'self'; camera 'self'; encrypted-media 'self'; fullscreen 'self'; geolocation 'self'; gyroscope 'self'; magnetometer 'self'; microphone 'self'; midi 'self'; payment 'self'; picture-in-picture *; speaker 'self'; sync-xhr *; usb 'self'; vr 'self';
+X-Permitted-Cross-Domain-Policies: none
+Expect-CT: enforce, max-age=604800
+X-Backend-Server: vm2731.jn-hebergement.com
+Access-Control-Allow-Origin: https://assets.prestashop3.com
+Access-Control-Allow-Methods: GET,OPTIONS
+Access-Control-Allow-Headers: Content-Type
+CF-Cache-Status: DYNAMIC
+Set-Cookie: __cf_bm=LEWN7c5j8ch7djotHIJb0Del.QD3yo7J7vHp5sY9eGk-1698411238-0-AbFsLNuEGYmcXpCW856q+A5u0jAU6ucE/5hhgqq0LmI81/OE/iXNpytarENpxtKCerQ7PHDzaIXOAUT/sXdug9k=; path=/; expires=Fri, 27-Oct-23 13:23:58 GMT; domain=.prestashop.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 81cb15bd9a8434b0-WAW
+
+{"services":[]}";
