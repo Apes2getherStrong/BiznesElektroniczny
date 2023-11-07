@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-10-27 14:53:33
+/* Smarty version 3.1.48, created on 2023-11-07 13:10:01
   from 'module:pslinklistviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_653bb2cd1737a1_75803557',
+  'unifunc' => 'content_654a2919948ce1_79621361',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_653bb2cd1737a1_75803557 (Smarty_Internal_Template $_smarty_tpl) {
+function content_654a2919948ce1_79621361 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
@@ -90,9 +90,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-cms-page-1-2"
                 class="cms-page-link"
                 href="http://localhost:8080/index.php?id_cms=1&amp;controller=cms"
-                title="Our terms and conditions of delivery"
+                title="Nasze warunki dostawy"
                             >
-              Delivery
+              Dostawa
             </a>
           </li>
                   <li>
@@ -100,9 +100,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-cms-page-2-2"
                 class="cms-page-link"
                 href="http://localhost:8080/index.php?id_cms=2&amp;controller=cms"
-                title="Legal notice"
+                title="Nota prawna"
                             >
-              Legal Notice
+              Nota prawna
             </a>
           </li>
                   <li>
@@ -110,9 +110,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-cms-page-3-2"
                 class="cms-page-link"
                 href="http://localhost:8080/index.php?id_cms=3&amp;controller=cms"
-                title="Our terms and conditions of use"
+                title="Regulamin sklepu"
                             >
-              Terms and conditions of use
+              Regulamin sklepu
             </a>
           </li>
                   <li>
@@ -120,9 +120,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-cms-page-4-2"
                 class="cms-page-link"
                 href="http://localhost:8080/index.php?id_cms=4&amp;controller=cms"
-                title="Learn more about us"
+                title="Dowiedz się więcej o nas"
                             >
-              About us
+              O nas
             </a>
           </li>
                   <li>
@@ -130,9 +130,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-cms-page-5-2"
                 class="cms-page-link"
                 href="http://localhost:8080/index.php?id_cms=5&amp;controller=cms"
-                title="Our secure payment mean"
+                title="Zwroty"
                             >
-              Secure payment
+              Zwroty
             </a>
           </li>
                   <li>
