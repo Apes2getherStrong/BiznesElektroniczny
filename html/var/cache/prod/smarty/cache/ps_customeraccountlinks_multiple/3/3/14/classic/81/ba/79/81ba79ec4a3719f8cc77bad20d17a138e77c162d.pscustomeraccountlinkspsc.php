@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-07 11:58:56
+/* Smarty version 3.1.48, created on 2023-11-21 14:43:25
   from 'module:pscustomeraccountlinkspsc' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_654a18703975d9_79198451',
+  'unifunc' => 'content_655cb3fd1c4cc9_67539564',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_654a18703975d9_79198451 (Smarty_Internal_Template $_smarty_tpl) {
+function content_655cb3fd1c4cc9_67539564 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
@@ -64,12 +64,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             Adresy
           </a>
         </li>
-          <li>
-    <a href="http://localhost:8080/index.php?fc=module&amp;module=blockwishlist&amp;controller=lists" title="Moje listy życzeń" rel="nofollow">
-      Lista życzeń
-    </a>
-  </li>
-
+        
 	</ul>
 </div>
 <?php }
