@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-21 15:07:48
+/* Smarty version 3.1.48, created on 2023-11-21 17:02:29
   from 'module:psimagesliderviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_655cb9b46d9985_18161411',
+  'unifunc' => 'content_655cd495ce2e75_70121766',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_655cb9b46d9985_18161411 (Smarty_Internal_Template $_smarty_tpl) {
+function content_655cd495ce2e75_70121766 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <div id="carousel" data-ride="carousel" class="carousel slide" data-interval="5000" data-wrap="true" data-pause="hover" data-touch="true">
     <ol class="carousel-indicators">
@@ -28,38 +28,23 @@ function content_655cb9b46d9985_18161411 (Smarty_Internal_Template $_smarty_tpl)
           </ol>
     <ul class="carousel-inner" role="listbox" aria-label="Pokaz slajdów">
               <li class="carousel-item active" role="option" aria-hidden="false">
-          <a href="https://www.prestashop-project.org?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
+          <a href="http://localhost:8080/index.php?id_product=232&amp;rewrite=warsztaty-o-czakrach-masterclass-odzyskaj-harmonie-i-odblokuj-swoj-maksymalny-potencjal&amp;controller=product">
             <figure>
-              <img src="http://localhost:8080/modules/ps_imageslider/images/sample-1.jpg" alt="sample-1" loading="lazy" width="1110" height="340">
-                              <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">Sample 1</h2>
-                  <div class="caption-description"><h3>EXCEPTEUR OCCAECAT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p></div>
-                </figcaption>
+              <img src="http://localhost:8080/modules/ps_imageslider/images/d9d9f488da9e3ab24c0f1427e6ad8c9175d83aec_1.jpg" alt="sample-1" loading="lazy" width="1110" height="340">
                           </figure>
           </a>
         </li>
               <li class="carousel-item " role="option" aria-hidden="true">
-          <a href="https://www.prestashop-project.org?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
+          <a href="http://localhost:8080/index.php?id_category=40&amp;controller=category">
             <figure>
-              <img src="http://localhost:8080/modules/ps_imageslider/images/sample-2.jpg" alt="sample-2" loading="lazy" width="1110" height="340">
-                              <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">Sample 2</h2>
-                  <div class="caption-description"><h3>EXCEPTEUR OCCAECAT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p></div>
-                </figcaption>
+              <img src="http://localhost:8080/modules/ps_imageslider/images/f3ea5882f94308403213b9b9b6fb8a85753eb2ab_2.jpg" alt="sample-2" loading="lazy" width="1110" height="340">
                           </figure>
           </a>
         </li>
               <li class="carousel-item " role="option" aria-hidden="true">
-          <a href="https://www.prestashop-project.org?utm_source=back-office&amp;utm_medium=v17_homeslider&amp;utm_campaign=back-office-PL&amp;utm_content=download">
+          <a href="http://localhost:8080/index.php?id_product=85&amp;rewrite=alchemia-roku-workbook-do-pracy-z-energia-poszczegolnych-miesiecy&amp;controller=product">
             <figure>
-              <img src="http://localhost:8080/modules/ps_imageslider/images/sample-3.jpg" alt="sample-3" loading="lazy" width="1110" height="340">
-                              <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">Sample 3</h2>
-                  <div class="caption-description"><h3>EXCEPTEUR OCCAECAT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique in tortor et dignissim. Quisque non tempor leo. Maecenas egestas sem elit</p></div>
-                </figcaption>
+              <img src="http://localhost:8080/modules/ps_imageslider/images/636ca8fab176e3b11e32038ccab586211cf8d8e3_3.jpg" alt="sample-3" loading="lazy" width="1110" height="340">
                           </figure>
           </a>
         </li>
