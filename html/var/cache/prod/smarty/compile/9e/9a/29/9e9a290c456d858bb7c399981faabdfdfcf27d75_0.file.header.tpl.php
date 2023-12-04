@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-12-04 21:29:12
+/* Smarty version 3.1.48, created on 2023-12-04 22:03:30
   from '/var/www/html/admin1/themes/default/template/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_656e36983851d2_35891187',
+  'unifunc' => 'content_656e3ea2284709_53885598',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e9a290c456d858bb7c399981faabdfdfcf27d75' => 
     array (
       0 => '/var/www/html/admin1/themes/default/template/header.tpl',
-      1 => 1701719744,
+      1 => 1701723105,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:nav.tpl' => 1,
   ),
 ),false)) {
-function content_656e36983851d2_35891187 (Smarty_Internal_Template $_smarty_tpl) {
+function content_656e3ea2284709_53885598 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <!--[if lt IE 7]> <html lang="<?php echo $_smarty_tpl->tpl_vars['iso']->value;?>
 " class="no-js lt-ie9 lt-ie8 lt-ie7 lt-ie6"> <![endif]-->
