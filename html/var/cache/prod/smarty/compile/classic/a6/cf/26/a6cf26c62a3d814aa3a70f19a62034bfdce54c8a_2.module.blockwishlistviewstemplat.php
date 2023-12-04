@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-10-27 14:53:33
+/* Smarty version 3.1.48, created on 2023-12-04 21:29:17
   from 'module:blockwishlistviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_653bb2cd1b21c6_56798713',
+  'unifunc' => 'content_656e369d4b5ff5_81668919',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a6cf26c62a3d814aa3a70f19a62034bfdce54c8a' => 
     array (
       0 => 'module:blockwishlistviewstemplat',
-      1 => 1659365271,
+      1 => 1701719749,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_653bb2cd1b21c6_56798713 (Smarty_Internal_Template $_smarty_tpl) {
+function content_656e369d4b5ff5_81668919 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div
     class="wishlist-toast"

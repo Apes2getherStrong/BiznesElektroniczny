@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-10-27 14:53:56
+/* Smarty version 3.1.48, created on 2023-12-04 21:28:40
   from '/var/www/html/modules/welcome/views/content.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_653bb2e4213fa2_75655585',
+  'unifunc' => 'content_656e3678e322c5_40087878',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'de0f81b79cd55935c311223be3964dc237349666' => 
     array (
       0 => '/var/www/html/modules/welcome/views/content.tpl',
-      1 => 1676360366,
+      1 => 1701719750,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_653bb2e4213fa2_75655585 (Smarty_Internal_Template $_smarty_tpl) {
+function content_656e3678e322c5_40087878 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'/var/www/html/vendor/smarty/smarty/libs/plugins/function.math.php','function'=>'smarty_function_math',),));
 ?>
 

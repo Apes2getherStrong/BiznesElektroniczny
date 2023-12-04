@@ -30,7 +30,7 @@ class __TwigTemplate_11762e72178c0e658829c4ef4da3e2cf873debd019952098e2f1b80d5c2
         echo "
 ";
         // line 26
-        $this->loadTemplate("@PrestaShop/Admin/Sell/Customer/Blocks/delete_modal.html.twig", "@PrestaShop/Admin/Sell/Customer/Blocks/delete_modal.html.twig", 26, "1757671003")->display(twig_array_merge($context, ["id" => ($this->getAttribute(        // line 27
+        $this->loadTemplate("@PrestaShop/Admin/Sell/Customer/Blocks/delete_modal.html.twig", "@PrestaShop/Admin/Sell/Customer/Blocks/delete_modal.html.twig", 26, "175559810")->display(twig_array_merge($context, ["id" => ($this->getAttribute(        // line 27
 ($context["grid"] ?? null), "id", []) . "_grid_delete_customers_modal"), "title" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("How do you want to delete the selected customers?", [], "Admin.Orderscustomers.Notification"), "closable" => true, "actions" => [0 => ["type" => "button", "label" => $this->env->getExtension('Symfony\Bridge\Twig\Extension\TranslationExtension')->trans("Delete", [], "Admin.Actions"), "class" => "btn btn-danger btn-lg js-submit-delete-customers"]]]));
     }
 
@@ -65,7 +65,7 @@ class __TwigTemplate_11762e72178c0e658829c4ef4da3e2cf873debd019952098e2f1b80d5c2
 
 
 /* @PrestaShop/Admin/Sell/Customer/Blocks/delete_modal.html.twig */
-class __TwigTemplate_11762e72178c0e658829c4ef4da3e2cf873debd019952098e2f1b80d5c2a6284___1757671003 extends \Twig\Template
+class __TwigTemplate_11762e72178c0e658829c4ef4da3e2cf873debd019952098e2f1b80d5c2a6284___175559810 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {
