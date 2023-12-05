@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-12-04 22:03:00
+/* Smarty version 3.1.48, created on 2023-12-05 12:46:09
   from 'module:psbannerpsbanner.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_656e3e847ac4a9_36791006',
+  'unifunc' => 'content_656f0d8162e125_35473528',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '64034093fbda864710a2c0f526b37f921e53ee39' => 
     array (
       0 => 'module:psbannerpsbanner.tpl',
-      1 => 1701723107,
+      1 => 1701724888,
       2 => 'module',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_656e3e847ac4a9_36791006 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '465592816656e3e847aacf8_11609879';
+function content_656f0d8162e125_35473528 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '2122641707656f0d8162c712_87380452';
 ?>
 <a class="banner" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['banner_link']->value, ENT_QUOTES, 'UTF-8');?>
 " title="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['banner_desc']->value, ENT_QUOTES, 'UTF-8');?>

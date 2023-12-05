@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-12-04 22:03:06
+/* Smarty version 3.1.48, created on 2023-12-05 12:47:18
   from '/var/www/html/themes/classic/templates/_partials/microdata/product-list-jsonld.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_656e3e8a6a2a08_84342925',
+  'unifunc' => 'content_656f0dc6976947_72653157',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f7e0fbc99df9213c54dbd45d7fa3d31b85ef491e' => 
     array (
       0 => '/var/www/html/themes/classic/templates/_partials/microdata/product-list-jsonld.tpl',
-      1 => 1701723107,
+      1 => 1701724888,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_656e3e8a6a2a08_84342925 (Smarty_Internal_Template $_smarty_tpl) {
+function content_656f0dc6976947_72653157 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  type="application/ld+json">
   {

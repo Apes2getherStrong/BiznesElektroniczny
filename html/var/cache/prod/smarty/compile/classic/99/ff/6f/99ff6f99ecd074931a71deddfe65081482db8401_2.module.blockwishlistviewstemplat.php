@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-12-04 22:03:00
+/* Smarty version 3.1.48, created on 2023-12-05 12:46:09
   from 'module:blockwishlistviewstemplat' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_656e3e848d2e62_09120198',
+  'unifunc' => 'content_656f0d81800bd7_69290803',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '99ff6f99ecd074931a71deddfe65081482db8401' => 
     array (
       0 => 'module:blockwishlistviewstemplat',
-      1 => 1701723106,
+      1 => 1701724887,
       2 => 'module',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_656e3e848d2e62_09120198 (Smarty_Internal_Template $_smarty_tpl) {
+function content_656f0d81800bd7_69290803 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div
   class="wishlist-login"

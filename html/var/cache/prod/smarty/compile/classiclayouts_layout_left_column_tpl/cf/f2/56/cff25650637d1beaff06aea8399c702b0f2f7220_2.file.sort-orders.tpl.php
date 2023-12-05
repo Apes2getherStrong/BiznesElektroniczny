@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-12-04 22:03:06
+/* Smarty version 3.1.48, created on 2023-12-05 12:47:18
   from '/var/www/html/themes/classic/templates/catalog/_partials/sort-orders.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_656e3e8a77b3c5_35096367',
+  'unifunc' => 'content_656f0dc6a1fdd5_51306086',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cff25650637d1beaff06aea8399c702b0f2f7220' => 
     array (
       0 => '/var/www/html/themes/classic/templates/catalog/_partials/sort-orders.tpl',
-      1 => 1701723107,
+      1 => 1701724888,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_656e3e8a77b3c5_35096367 (Smarty_Internal_Template $_smarty_tpl) {
+function content_656f0dc6a1fdd5_51306086 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <span class="col-sm-3 col-md-3 hidden-sm-down sort-by"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sort by:','d'=>'Shop.Theme.Global'),$_smarty_tpl ) );?>
 </span>
