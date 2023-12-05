@@ -16,6 +16,21 @@ public class TestHandler  {
     private final long waitTime = 0;
 
     //a) Dodanie do koszyka 10 produktów (w różnych ilościach) z dwóch różnych kategorii
+
+
+    public final void bypassWarning() throws InterruptedException {
+        // click advanced setting
+        WebElement advancedButton = driver.findElement(By.xpath("//button[@id='details-button']"));
+        advancedButton.click();
+
+        Thread.sleep(waitTime);
+
+        //go to site
+        WebElement proceedToLocalHostLink = driver.findElement(By.xpath("//a[@id='proceed-link']"));
+        proceedToLocalHostLink.click();
+
+
+    }
     public void addProductsToCart(int categoryNr, int subcategoryNr, int productNr, int maxQuantity)
             throws InterruptedException{
 
@@ -73,8 +88,8 @@ public class TestHandler  {
         driver.get(url);
         driver.getTitle();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(750));
-
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+        bypassWarning();
         Thread.sleep(waitTime);
         addProductsToCart(0, 0, 0, 5);
         addProductsToCart(0, 0, 1, 5);
@@ -89,6 +104,7 @@ public class TestHandler  {
         addProductsToCart(1, 4, 1, 5);
 
         Thread.sleep(2000);
-        driver.quit();
+        System.out.println("");
+        //driver.quit();
     }
 }
