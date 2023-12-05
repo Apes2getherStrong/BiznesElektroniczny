@@ -32,7 +32,7 @@
 
 ## Admin panel:
 
-1. Open https://localhost/admi1
+1. Open https://localhost/admin1
 2. Login: **xyz@wp.pl** password: **KochamPreste123!**
 
 ## Selenium
