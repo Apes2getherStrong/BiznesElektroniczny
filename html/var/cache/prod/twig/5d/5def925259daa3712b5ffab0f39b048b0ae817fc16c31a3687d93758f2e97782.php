@@ -30,7 +30,7 @@ class __TwigTemplate_b4bbef84fb83356bfc4a3d9f31c4f81ae3d6137a107354f2a364c22287c
         echo "
 ";
         // line 26
-        $this->loadTemplate("@PrestaShop/Admin/Configure/AdvancedParameters/Email/Blocks/email_logs_grid.html.twig", "@PrestaShop/Admin/Configure/AdvancedParameters/Email/Blocks/email_logs_grid.html.twig", 26, "608793877")->display(twig_array_merge($context, ["grid" => ($context["emailLogsGrid"] ?? null)]));
+        $this->loadTemplate("@PrestaShop/Admin/Configure/AdvancedParameters/Email/Blocks/email_logs_grid.html.twig", "@PrestaShop/Admin/Configure/AdvancedParameters/Email/Blocks/email_logs_grid.html.twig", 26, "409663224")->display(twig_array_merge($context, ["grid" => ($context["emailLogsGrid"] ?? null)]));
     }
 
     public function getTemplateName()
@@ -64,7 +64,7 @@ class __TwigTemplate_b4bbef84fb83356bfc4a3d9f31c4f81ae3d6137a107354f2a364c22287c
 
 
 /* @PrestaShop/Admin/Configure/AdvancedParameters/Email/Blocks/email_logs_grid.html.twig */
-class __TwigTemplate_b4bbef84fb83356bfc4a3d9f31c4f81ae3d6137a107354f2a364c22287cc77fc___608793877 extends \Twig\Template
+class __TwigTemplate_b4bbef84fb83356bfc4a3d9f31c4f81ae3d6137a107354f2a364c22287cc77fc___409663224 extends \Twig\Template
 {
     public function __construct(Environment $env)
     {

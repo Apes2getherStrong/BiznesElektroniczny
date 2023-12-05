@@ -5539,6 +5539,8 @@ Dziękujemy za cierpliwość.',
     'Get referred and earn a discount voucher of <span><strong>{discount}!</strong></span>' => 'Poleć nasz sklep i zdobądź kupon na <span><strong>{discount}!</strong></span> rabatu',
     'It&#039;s very easy to sign up. Just click here!' => 'To bardzo proste, aby się zarejestrować. Po prostu kliknij tutaj!',
     'When signing up, don&#039;t forget to provide the e-mail address of your referring friend:' => 'Rejestrując się, nie zapomnij podać adresu e-mail swojego znajomego:',
+    'Recycled packaging:' => 'Opakowanie z recyklingu',
+    'Review this credit slip and download it on our shop, go to the <a href="{order_slip_url}" target="_blank">%credit_slips_label%</a> section of your customer account.' => 'Przejrzyj dowód wpłaty i pobierz go z naszego sklepu. Idź na <a href="{order_slip_url}" target="_blank">%credit_slips_label%</a> na twoim koncie klienta',
   ),
   'EmailsSubject' => 
   array (
