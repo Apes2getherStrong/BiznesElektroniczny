@@ -14,7 +14,11 @@ public class App
     {
         TestHandler th = new TestHandler();
         try {
-            th.run();
+            for (int i=0; i<1; i++) {
+                System.out.println("**** RUN " + i + " ****");
+                th.run(i);
+                System.out.println();
+            }
         } catch (InterruptedException e) {
             System.out.println("interrupted exception");
             e.printStackTrace();

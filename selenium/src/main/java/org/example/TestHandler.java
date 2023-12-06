@@ -11,7 +11,8 @@ import java.util.Random;
 
 
 public class TestHandler {
-    private WebDriver driver = new ChromeDriver();
+    private WebDriver driver;
+    private JavascriptExecutor executor;
     private final String url = "http://localhost:8080";
     Random random = new Random();
 
@@ -41,20 +42,22 @@ public class TestHandler {
         //choosing category
         List<WebElement> dropdownItems = driver.findElements(By.xpath("//a[@class='dropdown-item' and @data-depth='0']"));
         WebElement firstDropdownItem = dropdownItems.get(categoryNr);
-        firstDropdownItem.click();
+        Thread.sleep(100);
+        executor.executeScript("arguments[0].click();", firstDropdownItem);
 
         Thread.sleep(waitTime);
 
         //choosing sub-category
         List<WebElement> subcategories = driver.findElements(By.className("subcategory-name"));
         WebElement firstSubcategory = subcategories.get(subcategoryNr);
-        firstSubcategory.click();
+        executor.executeScript("arguments[0].click();", firstSubcategory);
         Thread.sleep(100);
 
         //choosing product
         List<WebElement> product = driver.findElements(By.cssSelector(".thumbnail.product-thumbnail"));
         WebElement firstproduct = product.get(productNr);
-        firstproduct.click();
+        executor.executeScript("arguments[0].click();", firstproduct);
+
 
         Thread.sleep(waitTime);
 
@@ -64,9 +67,10 @@ public class TestHandler {
 
     }
 
-    private void returnToHomeScreen() {
+    private void returnToHomeScreen() throws InterruptedException {
+        Thread.sleep(100);
         WebElement logoImage = driver.findElement(By.className("logo"));
-        logoImage.click();
+        executor.executeScript("arguments[0].click();", logoImage);
     }
 
     private void addToCartAndContinueShopping(int maxQuantity) throws InterruptedException {
@@ -148,7 +152,7 @@ public class TestHandler {
         returnToHomeScreen();
     }
 
-    private void loginUser(String email, String password) {
+    private void loginUser(String email, String password) throws InterruptedException {
         //go to login form
         driver.findElement(By.xpath("//div[@id='_desktop_user_info']//a")).click();
         //fill out login form
@@ -171,9 +175,9 @@ public class TestHandler {
         driver.findElement(By.id("field-password")).sendKeys(password);    // password
         driver.findElement(By.xpath("//input[@name='customer_privacy']")).click();    // click customer privacy
         driver.findElement(By.xpath("//input[@name='psgdpr']")).click();    // click privacy policy
-        Thread.sleep(1000);
+        //submit
+        driver.findElement(By.xpath("//button[@class='btn btn-primary form-control-submit float-xs-right']")).click();
         System.out.println("TEST 4: REGISTERING NEW USER");
-
     }
 
     private void finishCartOrder(String address, String postcode, String city, int shippingTypeNr) throws InterruptedException {
@@ -181,10 +185,10 @@ public class TestHandler {
         Thread.sleep(100);
         driver.findElement(By.xpath("//div[@class='text-sm-center']/a[@class='btn btn-primary']")).click();
 
-        List <WebElement> knownAddresses = driver.findElements(By.xpath("//label[@class='radio-block']"));
+        List<WebElement> knownAddresses = driver.findElements(By.xpath("//label[@class='radio-block']"));
 
         //check if there are any known addresses
-        if (knownAddresses.isEmpty()){
+        if (knownAddresses.isEmpty()) {
             //fill out the form name surname already there
             driver.findElement(By.id("field-address1")).sendKeys(address); //address
             driver.findElement(By.id("field-postcode")).sendKeys(postcode); //postcode
@@ -192,15 +196,14 @@ public class TestHandler {
             //submit the form
             driver.findElement(By.xpath("//footer[@class='form-footer clearfix']/button[@class='continue btn btn-primary float-xs-right']")).click();
 
-        }
-        else{
+        } else {
             //skip the form (the known address is already selected)
             driver.findElement(By.xpath("//button[@class='btn btn-primary continue float-xs-right']")).click();
         }
 
         //select the shipping type
         List<WebElement> shippingOptions = driver.findElements(By.cssSelector(".row.delivery-option.js-delivery-option"));
-        shippingOptions.get(shippingTypeNr-1).findElement(By.cssSelector(".row")).click();
+        shippingOptions.get(shippingTypeNr - 1).findElement(By.cssSelector(".row")).click();
         //submit the delivery option
         driver.findElement(By.xpath("//button[@name='confirmDeliveryOption']")).click();
 
@@ -210,33 +213,39 @@ public class TestHandler {
         driver.findElement(By.id("conditions_to_approve[terms-and-conditions]")).click();
         //submit
         driver.findElement(By.xpath("//button[@class='btn btn-primary center-block']")).click();
-
+        System.out.println("TEST 5-8: FINISHING CART ORDER");
+        returnToHomeScreen();
     }
 
 
-    public void run() throws InterruptedException {
+    public void run(int loop) throws InterruptedException {
+        driver = new ChromeDriver();
+        executor = (JavascriptExecutor) driver;
         driver.get(url);
         driver.getTitle();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
 
         bypassWarning();
-//        add10Products();
-        searchForProduct("moontea", 5);
-//        deleteProducts(3);
-//        registerNewUser("Oskar","Domozych","oskar.gogacz@gmail.com","oskargogacz");
-        loginUser("oskar.gogacz@gmail.com", "oskargogacz");
-        finishCartOrder("Wojtanowska 24","69-420","Domozychowo",4);
-        checkOrder();
-        Thread.sleep(waitTime);
-
-
+        add10Products();
+        searchForProduct("poduszki", 2);
+        deleteProducts(3);
+        registerNewUser("Janek", "Gogaczovov", "oskar" + loop + ".grigaczovov@gmail.com", "oskargogacz");
+//        loginUser("oskar.gogacz@gmail.com", "oskargogacz");
+        finishCartOrder("Wojtanowska 24", "69-420", "Domozychowo", 4);
+        checkOrder(1);
         Thread.sleep(2000);
-        //driver.quit();
+        driver.quit();
     }
 
-    private void checkOrder() {
-        
+    private void checkOrder(int orderNr) {
+        driver.findElement(By.xpath("//ul[@class='account-list collapse']//a[@title='Zamówienia']")).click();
+
+        //get the table
+        List<WebElement> orders = driver.findElements(By.xpath("//table[@class='table table-striped table-bordered table-labeled hidden-sm-down']//tr"));
+        orders.get(orderNr - 1).findElement(By.xpath("//a[@data-link-action='view-order-details']")).click();
+        System.out.println("TEST 9: CHECKING ORDER DETAILS");
+
     }
 
 
