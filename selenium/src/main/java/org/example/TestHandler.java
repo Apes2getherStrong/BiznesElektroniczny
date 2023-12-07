@@ -2,12 +2,14 @@ package org.example;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.Random;
+import java.util.Scanner;
 
 
 public class TestHandler {
@@ -217,36 +219,94 @@ public class TestHandler {
         returnToHomeScreen();
     }
 
-
-    public void run(int loop) throws InterruptedException {
-        driver = new ChromeDriver();
-        executor = (JavascriptExecutor) driver;
-        driver.get(url);
-        driver.getTitle();
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
-
-        bypassWarning();
-        add10Products();
-        searchForProduct("poduszki", 2);
-        deleteProducts(3);
-        registerNewUser("Janek", "Gogaczovov", "oskar" + loop + ".grigaczovov@gmail.com", "oskargogacz");
-//        loginUser("oskar.gogacz@gmail.com", "oskargogacz");
-        finishCartOrder("Wojtanowska 24", "69-420", "Domozychowo", 4);
-        checkOrder(1);
-        Thread.sleep(2000);
-        driver.quit();
-    }
-
-    private void checkOrder(int orderNr) {
+    private void checkOrder(int orderNr) throws InterruptedException {
         driver.findElement(By.xpath("//ul[@class='account-list collapse']//a[@title='Zamówienia']")).click();
 
         //get the table
         List<WebElement> orders = driver.findElements(By.xpath("//table[@class='table table-striped table-bordered table-labeled hidden-sm-down']//tr"));
         orders.get(orderNr - 1).findElement(By.xpath("//a[@data-link-action='view-order-details']")).click();
         System.out.println("TEST 9: CHECKING ORDER DETAILS");
-
+        returnToHomeScreen();
     }
+
+    private void downloadInvoice(int invoiceNr) {
+        driver.findElement(By.xpath("//ul[@class='account-list collapse']//a[@title='Zamówienia']")).click();
+        List<WebElement> invoices = driver.findElements(By.xpath("//td[@class='text-sm-center hidden-md-down']//a"));
+        invoices.get(invoiceNr-1).click();
+    }
+
+    public void run(int loop) throws InterruptedException {
+        driver = new ChromeDriver();
+        //driver = new FirefoxDriver();
+        executor = (JavascriptExecutor) driver;
+        driver.get(url);
+        driver.getTitle();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
+
+        Scanner scanner = new Scanner(System.in);
+        String input = "";
+        bypassWarning();
+        while (true) {
+            displayOptions();
+            int intput = scanner.nextInt();
+            switch (intput) {
+                case 1:
+                    add10Products();
+                    break;
+                case 2:
+                    searchForProduct("poduszki", 2);
+                    break;
+                case 3:
+                    deleteProducts(3);
+                    break;
+                case 4:
+                    registerNewUser("Janek", "Gogaczovov", "oskar" + loop + ".grigaczovov@gmail.com", "oskargogacz");
+                    break;
+                case 5:
+                    finishCartOrder("Wojtanowska 24", "69-420", "Domozychowo", 4);
+                    break;
+                case 6:
+                    checkOrder(1);
+                    break;
+                case 7:
+                    downloadInvoice(1);
+                    break;
+                case 8:
+                    add10Products();
+                    searchForProduct("poduszki", 2);
+                    deleteProducts(3);
+                    registerNewUser("Janek", "Gogaczovov", "oskarik" + loop + ".grigaczovov@gmail.com", "oskargogacz");
+                    finishCartOrder("Wojtanowska 24", "69-420", "Domozychowo", 4);
+                    checkOrder(1);
+                    break;
+                case 9:
+                    System.exit(0);
+
+            }
+        }
+//        loginUser("oskar.gogacz@gmail.com", "oskargogacz");
+    }
+
+
+
+    private void displayOptions() {
+        System.out.println();
+        System.out.println("Valid Commands, type number of command:");
+        System.out.println("1. Add 10 Products");
+        System.out.println("2. Add searched product");
+        System.out.println("3. Delete 3 items from cart");
+        System.out.println("4. Register new user");
+        System.out.println("5. Finish cart order");
+        System.out.println("6. Check order status");
+        System.out.println("7. Download invoice");
+        System.out.println("8. Run all tests up to invoice");
+        System.out.println("9. EXIT");
+        System.out.println();
+    }
+
+
+
 
 
 }
