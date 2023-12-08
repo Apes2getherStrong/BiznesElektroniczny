@@ -137,6 +137,7 @@ public class TestHandler {
     }
 
     private void deleteFromCart() throws InterruptedException {
+        goToCart();
         List<WebElement> cartItems = driver.findElements(By.cssSelector(".cart-item"));
         int cartItemNr = random.nextInt(cartItems.size());
         WebElement cartItemDelete = cartItems.get(cartItemNr).findElement(By.cssSelector(".material-icons.float-xs-left"));
@@ -145,7 +146,6 @@ public class TestHandler {
     }
 
     private void deleteProducts(int quantity) throws InterruptedException {
-        goToCart();
         for (int i = 0; i < quantity; i++) {
             deleteFromCart();
             Thread.sleep(1000);
