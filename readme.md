@@ -36,7 +36,16 @@
 2. Login: **xyz@wp.pl** password: **KochamPreste123!**
 
 ## Selenium
+1. Open selenium project
+2. Run project
+3. Enter 8 in command line runner
+4. In admin panel mark the order as delivered
+5. Enter 7 in command Line runner
+   
 ## Scrapper
+1. Open moonscraper project in python
+2. Run project
+3. The scrapped items are in 'scrapedItems' folder
 
 # Team:
 Jan Domozych 191701
