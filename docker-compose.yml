@@ -2,10 +2,11 @@ version: '3'
 
 services:
   db:
-    container_name: ps-maria
-    image: mariadb
+    container_name: mysql
+    image: mysql
     volumes:
-      - $PWD/data:/var/lib/mysql
+      #- $PWD/data:/var/lib/mysql
+      - $PWD/dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
       MYSQL_ROOT_PASSWORD: 12345678
       MYSQL_DATABASE: ps
