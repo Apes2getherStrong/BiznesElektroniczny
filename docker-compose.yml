@@ -5,7 +5,7 @@ services:
     container_name: mysql
     image: mysql
     volumes:
-      #- $PWD/data:/var/lib/mysql
+      - $PWD/data:/var/lib/mysql
       - $PWD/dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
       MYSQL_ROOT_PASSWORD: 12345678
@@ -40,18 +40,6 @@ services:
       PS_FOLDER_INSTALL: install1 # jak wchodzimy instalować, to na localhost:8080/install1
     networks:
       - my_net
-
-  phpmyadmin:
-    container_name: phpmyadmin
-    image: phpmyadmin/phpmyadmin
-    environment:
-      PMA_ARBITRARY: 1
-    ports:
-      - "8081:80"
-    networks:
-      - my_net
-    depends_on:
-      - db
 
 networks:
   my_net:
