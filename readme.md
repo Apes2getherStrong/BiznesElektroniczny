@@ -102,7 +102,7 @@ ssh -L 18888:student-swarm03.maas:18888 rsww@172.20.83.101
 
 docker build . -t janek1010/be_188889
 docker push janek1010/be_188889:latest
-
+docker rmi janek1010/be_188889:latest
 
 
 # Team:
