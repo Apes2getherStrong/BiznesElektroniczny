@@ -47,6 +47,64 @@
 2. Run project
 3. The scrapped items are in 'scrapedItems' folder
 
+# Cluster
+### Connecting
+
+```bash
+ssh rsww@172.20.83.101
+qwe123
+ssh hdoop@student-swarm01.maas
+qwe123 
+```
+
+### Directing to student directory
+
+```bash
+cd /opt/storage/actina15-20/block-storage/students/projects/students-swarm-services
+cd BE_188889
+```
+
+### Initialiazing the script
+
+```bash
+sudo ./deploy.sh
+```
+### Displaying the logs
+
+```bash
+docker service ls # find your id
+docker service logs $id # first 3 characters are sufficient
+```
+
+### Checking the active services
+```bash
+docker service ps BE_188889
+```
+
+### Deleting containers
+```bash
+Docker stack rm BE_188889
+```
+
+# Connecting to database and website
+
+### Database
+```bash
+ssh -L 9099:student-swarm03.maas:9099 rsww@172.20.83.101
+```
+[localhost:9099](localhost:9099)
+
+### Website
+```bash
+ssh -L 18888:student-swarm03.maas:18888 rsww@172.20.83.101
+```
+[https://localhost:18888/](https://localhost:18888/)
+
+docker build . -t janek1010/be_188889
+docker push janek1010/be_188889:latest
+
+
+
 # Team:
 Jan Domozych 191701
 Konrad Wojtanowski 188890
