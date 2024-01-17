@@ -16,13 +16,13 @@ services:
           memory: 512M
     environment:
       PS_DEV_MODE: 0
-      PS_INSTALL_AUTO: 1
+      #PS_INSTALL_AUTO: 1
       DB_SERVER: db
       DB_USER: root
       DB_NAME: BE_188889
       DB_PASSWD: student
-      PS_COUNTRY: pl
-      PS_LANGUAGE: pl
+      PS_FOLDER_ADMIN: admin1
+      PS_FOLDER_INSTALL: install1 
     networks:
       - prestanet
       - admin-mysql_default
