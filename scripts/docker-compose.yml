@@ -16,7 +16,7 @@ services:
           memory: 512M
     environment:
       PS_DEV_MODE: 0
-      #PS_INSTALL_AUTO: 1
+      PS_INSTALL_AUTO: 1
       DB_SERVER: db
       DB_USER: root
       DB_NAME: BE_188889
