@@ -37,8 +37,8 @@ services:
       DB_PASSWD: ps
       DEV_MODE: 1
       DB_NAME: ps
-      PS_FOLDER_ADMIN: admin1 # localhost:8080/admin1 tu znajdziemy panel admina
-      PS_FOLDER_INSTALL: install1 # jak wchodzimy instalować, to na localhost:8080/install1
+      #PS_FOLDER_ADMIN: admin1 # localhost:8080/admin1 tu znajdziemy panel admina
+      #PS_FOLDER_INSTALL: install1 # jak wchodzimy instalować, to na localhost:8080/install1
     networks:
       - my_net
 
