@@ -1,10 +1,9 @@
 FROM prestashop/prestashop:1.7.8-apache
 
 COPY ./init.sh /init.sh
-
 COPY ./dump.sql /dump.sql
 
-RUN rm -rf ./var/www/html/*
+RUN rm -rf /var/www/html/*
 
 COPY ./html /var/www/html
 
