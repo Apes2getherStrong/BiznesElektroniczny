@@ -5,8 +5,8 @@ services:
     container_name: mysql
     image: mysql
     volumes:
-      - $PWD/data:/var/lib/mysql
-      - $PWD/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+      - ./data:/var/lib/mysql
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
       MYSQL_ROOT_PASSWORD: 12345678
       MYSQL_DATABASE: ps
@@ -24,7 +24,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - "$PWD/html:/var/www/html"
+      - ./html:/var/www/html
     depends_on:
       - db
     ports:
