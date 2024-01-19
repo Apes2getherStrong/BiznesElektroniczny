@@ -32,10 +32,12 @@ services:
       - 8080:80
       - 443:443
     environment:
+      PS_DEV_MODE: 0
+      PS_INSTALL_AUTO: 1
       DB_SERVER: db
       DB_USER: ps
       DB_PASSWD: ps
-      DEV_MODE: 1
+      #DEV_MODE: 1
       DB_NAME: ps
       #PS_FOLDER_ADMIN: admin1 # localhost:8080/admin1 tu znajdziemy panel admina
       #PS_FOLDER_INSTALL: install1 # jak wchodzimy instalować, to na localhost:8080/install1
