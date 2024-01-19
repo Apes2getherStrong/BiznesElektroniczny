@@ -15,7 +15,7 @@ services:
           cpus: '0.5'
           memory: 512M
     environment:
-      # PS_INSTALL_DB: 1 # dodatkowe 4 test
+      PS_INSTALL_DB: 1 # dodatkowe 4 test
       # ADMIN_MAIL: admin@example.com
       # ADMIN_PASSWD: admin
       #PS_DOMAIN: localhost
