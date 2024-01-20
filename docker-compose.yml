@@ -37,6 +37,7 @@ services:
       DB_SERVER: db
       DB_USER: student
       DB_PASSWD: student
+      PS_FOLDER_ADMIN: admin1
       #DEV_MODE: 1
       DB_NAME: BE_188889
       #PS_FOLDER_ADMIN: admin1 # localhost:8080/admin1 tu znajdziemy panel admina
