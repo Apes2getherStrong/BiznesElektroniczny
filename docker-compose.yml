@@ -5,13 +5,13 @@ services:
     container_name: mysql
     image: mysql
     volumes:
-      - ./data:/var/lib/mysql
+      #- ./data:/var/lib/mysql
       - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
     environment:
       MYSQL_ROOT_PASSWORD: 12345678
-      MYSQL_DATABASE: ps
-      MYSQL_USER: ps
-      MYSQL_PASSWORD: ps
+      MYSQL_DATABASE: BE_188889
+      MYSQL_USER: student
+      MYSQL_PASSWORD: student
     ports:
       - "3306"
     networks:
@@ -35,10 +35,10 @@ services:
       PS_DEV_MODE: 0
       PS_INSTALL_AUTO: 1
       DB_SERVER: db
-      DB_USER: ps
-      DB_PASSWD: ps
+      DB_USER: student
+      DB_PASSWD: student
       #DEV_MODE: 1
-      DB_NAME: ps
+      DB_NAME: BE_188889
       #PS_FOLDER_ADMIN: admin1 # localhost:8080/admin1 tu znajdziemy panel admina
       #PS_FOLDER_INSTALL: install1 # jak wchodzimy instalować, to na localhost:8080/install1
     networks:
