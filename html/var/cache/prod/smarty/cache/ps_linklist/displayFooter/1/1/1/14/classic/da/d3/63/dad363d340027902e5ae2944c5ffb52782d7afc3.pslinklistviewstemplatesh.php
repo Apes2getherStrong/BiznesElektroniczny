@@ -1,30 +1,30 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-12-05 12:46:24
+/* Smarty version 3.1.48, created on 2024-01-20 13:10:58
   from 'module:pslinklistviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_656f0d90804fd7_26133821',
+  'unifunc' => 'content_65abb8523b0022_94469098',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '906548e89c8c6025457ddaeffb1980a0c743b872' => 
     array (
       0 => 'module:pslinklistviewstemplatesh',
-      1 => 1701724888,
+      1 => 1705752404,
       2 => 'module',
     ),
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_656f0d90804fd7_26133821 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65abb8523b0022_94469098 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
     'compiled_filepath' => '/var/www/html/var/cache/prod/smarty/compile/classiclayouts_layout_full_width_tpl/d2/2d/85/d22d851f6d7c12eb35c1c34c8e84baa801a8cea2_2.file.helpers.tpl.php',
     'uid' => 'd22d851f6d7c12eb35c1c34c8e84baa801a8cea2',
-    'call_name' => 'smarty_template_function_renderLogo_758827502656f0d8165b652_48946874',
+    'call_name' => 'smarty_template_function_renderLogo_140063013865abb852225090_96722937',
   ),
 ));
 ?><div class="col-md-6 links">
@@ -45,7 +45,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-product-page-prices-drop-1"
                 class="cms-page-link"
-                href="https://localhost/index.php?controller=prices-drop"
+                href="https://localhost:18888/index.php?controller=prices-drop"
                 title="Our special products"
                             >
               Promocje
@@ -55,7 +55,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-product-page-new-products-1"
                 class="cms-page-link"
-                href="https://localhost/index.php?controller=new-products"
+                href="https://localhost:18888/index.php?controller=new-products"
                 title="Nasze nowe produkty"
                             >
               Nowe produkty
@@ -65,7 +65,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-product-page-best-sales-1"
                 class="cms-page-link"
-                href="https://localhost/index.php?controller=best-sales"
+                href="https://localhost:18888/index.php?controller=best-sales"
                 title="Nasze najlepiej sprzedające się produkty"
                             >
               Najczęściej kupowane
@@ -89,7 +89,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-cms-page-1-2"
                 class="cms-page-link"
-                href="https://localhost/index.php?id_cms=1&amp;controller=cms"
+                href="https://localhost:18888/index.php?id_cms=1&amp;controller=cms"
                 title="Nasze warunki dostawy"
                             >
               Dostawa
@@ -99,7 +99,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-cms-page-3-2"
                 class="cms-page-link"
-                href="https://localhost/index.php?id_cms=3&amp;controller=cms"
+                href="https://localhost:18888/index.php?id_cms=3&amp;controller=cms"
                 title="Regulamin sklepu"
                             >
               Regulamin sklepu
@@ -109,7 +109,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-cms-page-4-2"
                 class="cms-page-link"
-                href="https://localhost/index.php?id_cms=4&amp;controller=cms"
+                href="https://localhost:18888/index.php?id_cms=4&amp;controller=cms"
                 title="Dowiedz się więcej o nas"
                             >
               O nas
@@ -119,7 +119,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-cms-page-5-2"
                 class="cms-page-link"
-                href="https://localhost/index.php?id_cms=5&amp;controller=cms"
+                href="https://localhost:18888/index.php?id_cms=5&amp;controller=cms"
                 title="Zwroty"
                             >
               Zwroty
@@ -129,7 +129,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-cms-page-2-2"
                 class="cms-page-link"
-                href="https://localhost/index.php?id_cms=2&amp;controller=cms"
+                href="https://localhost:18888/index.php?id_cms=2&amp;controller=cms"
                 title="Polityka Cookies"
                             >
               Polityka Cookies
@@ -139,7 +139,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-static-page-contact-2"
                 class="cms-page-link"
-                href="https://localhost/index.php?controller=contact"
+                href="https://localhost:18888/index.php?controller=contact"
                 title="Skorzystaj z formularza kontaktowego"
                             >
               Kontakt z nami
@@ -149,7 +149,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-static-page-sitemap-2"
                 class="cms-page-link"
-                href="https://localhost/index.php?controller=sitemap"
+                href="https://localhost:18888/index.php?controller=sitemap"
                 title="Zagubiłeś się? Znajdź to, czego szukasz!"
                             >
               Mapa strony
@@ -159,7 +159,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
             <a
                 id="link-static-page-stores-2"
                 class="cms-page-link"
-                href="https://localhost/index.php?controller=stores"
+                href="https://localhost:18888/index.php?controller=stores"
                 title=""
                             >
               Sklepy
