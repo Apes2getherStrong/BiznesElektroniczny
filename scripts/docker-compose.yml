@@ -25,6 +25,7 @@ services:
       DB_USER: root
       DB_NAME: BE_188889
       DB_PASSWD: student
+      PS_FOLDER_ADMIN: admin1
       PS_COUNTRY: pl
       PS_LANGUAGE: pl
     networks:
