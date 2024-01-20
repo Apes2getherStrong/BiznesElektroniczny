@@ -90,13 +90,13 @@ Docker stack rm BE_188889
 
 ### Database
 ```bash
-ssh -L 9099:student-swarm03.maas:9099 rsww@172.20.83.101
+ssh -L 9099:student-swarm01.maas:9099 rsww@172.20.83.101
 ```
 [localhost:9099](localhost:9099)
 
 ### Website
 ```bash
-ssh -L 18888:student-swarm03.maas:18888 rsww@172.20.83.101
+ssh -L 18888:student-swarm01.maas:18888 rsww@172.20.83.101
 ```
 [https://localhost:18888/](https://localhost:18888/)
 
