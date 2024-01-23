@@ -1,6 +1,6 @@
 services:
   prestashop:
-    image: kondziow/be_188889:latest
+    image: kondziow/be_188889:finito
     user: root
     ports:
       - 18888:443
