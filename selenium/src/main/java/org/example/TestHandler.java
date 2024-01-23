@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class TestHandler {
     private WebDriver driver;
     private JavascriptExecutor executor;
-    private final String url = "http://localhost:8080";
+    private final String url = "https://localhost:18888";
     Random random = new Random();
 
     private final long waitTime = 0;
@@ -279,6 +279,7 @@ public class TestHandler {
                     registerNewUser("Janek", "Gogaczovov", "oskarik" + loop + ".grigaczovov@gmail.com", "oskargogacz");
                     finishCartOrder("Wojtanowska 24", "69-420", "Domozychowo", 4);
                     checkOrder(1);
+                    downloadInvoice(2);
                     break;
                 case 9:
                     System.exit(0);
@@ -300,7 +301,7 @@ public class TestHandler {
         System.out.println("5. Finish cart order");
         System.out.println("6. Check order status");
         System.out.println("7. Download invoice");
-        System.out.println("8. Run all tests up to invoice");
+        System.out.println("8. Run all tests");
         System.out.println("9. EXIT");
         System.out.println();
     }
