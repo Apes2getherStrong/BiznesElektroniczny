@@ -97,17 +97,17 @@ public class TestHandler {
     }
 
     public void add10Products() throws InterruptedException {
-        addProductsToCart(0, 0, 0, 5);
-        addProductsToCart(0, 0, 1, 5);
-        addProductsToCart(0, 0, 2, 5);
-        addProductsToCart(0, 0, 3, 5);
-        addProductsToCart(0, 0, 4, 5);
+        addProductsToCart(0, 0, 0, 3);
+        addProductsToCart(0, 0, 1, 3);
+        addProductsToCart(0, 0, 2, 3);
+        addProductsToCart(0, 0, 3, 3);
+        addProductsToCart(0, 0, 4, 3);
 
-        addProductsToCart(1, 0, 1, 5);
-        addProductsToCart(1, 1, 1, 5);
-        addProductsToCart(1, 2, 1, 5);
-        addProductsToCart(1, 3, 1, 5);
-        addProductsToCart(1, 4, 1, 5);
+        addProductsToCart(1, 0, 1, 3);
+        addProductsToCart(1, 1, 1, 3);
+        addProductsToCart(1, 2, 1, 3);
+        addProductsToCart(1, 3, 1, 3);
+        addProductsToCart(1, 4, 1, 3);
         System.out.println("TEST 1: ADDING 10 PRODUCTS FINISHED");
     }
 
@@ -242,7 +242,7 @@ public class TestHandler {
         driver.get(url);
         driver.getTitle();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5000));
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(10000));
 
         Scanner scanner = new Scanner(System.in);
         String input = "";
